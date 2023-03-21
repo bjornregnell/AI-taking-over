@@ -42,24 +42,44 @@ def slides = document("När AI tar över"):
     image("../img/neuron", width = 0.85)
     p("Wikipedia: 'Nervcell'") 
 
+  frame("En enkel modell av en hjärncell: en artificiell neuron"):
+    image("../img/artificial-neuron", width = 0.85)
+    code("output = S(x1*w1 + x2*w2 + x3*w3 + bias)") 
+  
+  frame("Ett litet nätverk av neuroner"):
+    image("../img/ai-network", width = 0.85)
+    p("Ett nätverk med 3 lager, 6 neuroner, 20 parametrar") 
+
+  frame("Hur går träningen till?"):
+    p("En enkel träningsalgoritm:")
+    enumerate:
+      p("Ge alla parametrar ett slumpmässigt startvärde.")
+      p("Ge ny träningsdata som input.")
+      p("Beräkna **felet**: ''avståndet'' mellan output och korrekt värde.")
+      p("Välj en slumpmässig neuron och **justera** dess parametrar slumpmässigt; förändringsstorleken styrs av en *lärfaktor*.")
+      p("Beräkna nya felet efter justeringen.")
+      p("**Om** felet är mindre efter justering **så** behåll de nya parametrarna **annars** återställ parametrarna.")
+      p("Upprepa från punkt 2 lagom många gånger.")
+
+
   // Facebooks språkmodell LaMA:
   // 2048 GPU A100 80Gig VRAM (kostar 150kkr per GPU) i 21 dagar 10^12 ord, 65 10^9 
-  frame("Vad skiljer detta simpla nätverk från dagens bästa AI?"):
+  frame("Vad skiljer detta simpla nätverk från ChatGPT?"):
     p("Min simpla binära könsklassificerare:")
     itemize:
       p("6 neuroner, 20 parametrar, tränad på 4 datapunkter")
     p("ChatGPT-3:")
     itemize:
-      p("175 miljarder parametrar, tränad på **jättemycket** data \\\\(300 miljarder ord, 10,000 GPU:er)")
-      p("Baserad på en **språkmodell** som tar ord som indata och ge troligaste efterföljande ord som utdata.")
-      p("GPT")
+      p("175 miljarder parametrar, tränad på **jättemycket** data \\\\(300 miljarder ord tränad med 10,000 specialdatorer)")
+      p("Baserad på en **språkmodell** som tar ord som indata och ger troligaste efterföljande ord som utdata.")
+      p("Vad betyder akronymen GPT?")
       itemize:
         p("**Generative**: Kan generera ny utdata medan den tar hänsyn till ett existerande sammanhang.")
         p("**Pre-trained**: Har i förväg tränats på jättestora textmängder, inkl. hela Wikipedia, och allmänt tillgängliga internet.")
         // Corpus CommonCrawl stod för 60% av indatan till GPT-3, Wikipedia 3% är 3 miljarder ord
         p("**Transformer**: Kan hantera sekvenser av ord, värdera kopplingar mellan ord och avgöra vilka ord som är viktigast.")
 
-  frame("AI-forskare har förfinat detta i många steg"):
+  frame("AI-forskare har förfinat träningen i många steg"):
     image("../img/chatgpt-steps", width = 1.05)
     p("https://openai.com/blog/chatgpt")
 
@@ -92,8 +112,8 @@ def slides = document("När AI tar över"):
       //https://huggingface.co/facebook/bart-large-mnli?candidateLabels=malm%C3%B6%2C+lund%2C+stockholm&multiClass=false&text=Vilken+%C3%A4r+huvudstaden+i+sk%C3%A5ne%3F
       p("Vad händer med demokratin? Vilket samhälle vil vi ha?")
 
-  frame("AI och LTH:"):
-    p("Alla anställda och alla blivande ingenjörer behöver lära sig ...")
+  frame("AI och universitetsutbildning:"):
+    p("Alla anställda och alla studenter behöver lära sig ...")
     itemize:
       p("att programmera")
       p("att förstå hur en AI funkar")
@@ -106,6 +126,6 @@ def slides = document("När AI tar över"):
         p("hur man använder AI på ett bra sätt när man pluggar")
         p("hur man använder AI i den framtida yrkesrollen")
         p("begränsningar och risker med AI")
-      p("Examination sker i högre grad **muntligen**")
-      p("Examination sker i högre grad **på förståelsenivå**")
-      p("Examinera förmågan att **värdera utdata** från AI")
+      p("Examination behöver i högre grad ske **muntligen**")
+      p("Examination behöver ske på **högre kunskapsnivå**")
+      p("Även examinera förmågan att **värdera utdata** från AI")
