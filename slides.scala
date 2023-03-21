@@ -60,12 +60,14 @@ def slides = document("När AI tar över"):
       p("Beräkna nya felet efter justeringen.")
       p("**Om** felet är mindre efter justering **så** behåll de nya parametrarna **annars** återställ parametrarna.")
       p("Upprepa från punkt 2 lagom många gånger.")
+    p("Testa träningsalgoritmen här:")
+    p("https://scastie.scala-lang.org/vVvDotCzRUyyAWg5lec9Jg")
 
 
   // Facebooks språkmodell LaMA:
   // 2048 GPU A100 80Gig VRAM (kostar 150kkr per GPU) i 21 dagar 10^12 ord, 65 10^9 
-  frame("Vad skiljer detta simpla nätverk från ChatGPT?"):
-    p("Min simpla binära könsklassificerare:")
+  frame("Vad skiljer vårt simpla nätverk från ChatGPT?"):
+    p("Den simpla binära könsklassificeraren:")
     itemize:
       p("6 neuroner, 20 parametrar, tränad på 4 datapunkter")
     p("ChatGPT-3:")
@@ -85,7 +87,7 @@ def slides = document("När AI tar över"):
 
   frame("Några problem med maskininlärning"):
     enumerate:
-      p("Bias; fördomsfull AI")
+      p("Bias: fördomsfull AI")
       p("Överträning: kan ej generalisera bortom träningsdata")
       p("Det är inte lätt att få stora modeller att bli bra")
       p("Kan plötsligt börja ''hallucinera'' -- spottar ur sig nonsens")
