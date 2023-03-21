@@ -47,7 +47,7 @@ def slides = document("När AI tar över"):
     code("output = S(x1*w1 + x2*w2 + x3*w3 + bias)") 
   
   frame("Ett litet nätverk av neuroner"):
-    image("../img/ai-network", width = 0.85)
+    image("../img/ai-network", width = 0.95)
     p("Ett nätverk med 3 lager, 6 neuroner, 20 parametrar") 
 
   frame("Hur går träningen till?"):
