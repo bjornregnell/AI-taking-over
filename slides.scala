@@ -38,42 +38,59 @@ def slides = document("När AI tar över"):
     p("167, 73  \\hfill borde bli 0")
     p("120, 72  \\hfill borde bli 1")
 
+  frame("En nervcell i en hjärna"):
+    image("../img/neuron", width = 0.85)
+    p("Wikipedia: 'Nervcell'") 
 
+  // Facebooks språkmodell LaMA:
+  // 2048 GPU A100 80Gig VRAM (kostar 150kkr per GPU) i 21 dagar 10^12 ord, 65 10^9 
   frame("Vad skiljer detta simpla nätverk från dagens bästa AI?"):
     p("Min simpla binära könsklassificerare:")
     itemize:
       p("6 neuroner, 20 parametrar, tränad på 4 datapunkter")
-    p("ChatGPT version 3:")
+    p("ChatGPT-3:")
     itemize:
-      p("Över 100 miljoner parametrar, tränad på **jättemycket** data")
-      p("En **språkmodell** som kan ta ord uppdelade i sina beståndsdelar som indata och ge ord som utdata")
+      p("175 miljarder parametrar, tränad på **jättemycket** data \\\\(300 miljarder ord, 10,000 GPU:er)")
+      p("Baserad på en **språkmodell** som tar ord som indata och ge troligaste efterföljande ord som utdata.")
       p("GPT")
       itemize:
         p("**Generative**: Kan generera ny utdata medan den tar hänsyn till ett existerande sammanhang.")
-        p("**Pre-trained**: Har i förväg tränats på jättestora textmängder, inkl. hela Wikipedia, en massa böcker etc.")
-        p("**Transformer**: Kan hantera sekvenser av ord och värdera vad som är viktigast.")
+        p("**Pre-trained**: Har i förväg tränats på jättestora textmängder, inkl. hela Wikipedia, och allmänt tillgängliga internet.")
+        // Corpus CommonCrawl stod för 60% av indatan till GPT-3, Wikipedia 3% är 3 miljarder ord
+        p("**Transformer**: Kan hantera sekvenser av ord, värdera kopplingar mellan ord och avgöra vilka ord som är viktigast.")
 
   frame("AI-forskare har förfinat detta i många steg"):
-    image("../img/transformer-architecture", width = 0.75)
-    p("Wikipedia: 'Transformer (machine learning model)'")
+    image("../img/chatgpt-steps", width = 1.05)
+    p("https://openai.com/blog/chatgpt")
 
+  frame("Några problem med maskininlärning"):
+    enumerate:
+      p("Bias; fördomsfull AI")
+      p("Överträning: kan ej generalisera bortom träningsdata")
+      p("Det är inte lätt att få stora modeller att bli bra")
+      p("Kan plötsligt börja ''hallucinera'' -- spottar ur sig nonsens")
+      p("Svårt att förhindra olämplig eller rent oacceptabel utdata")
+      p("Kan inte själv avgöra vad som är rimligt")
+      p("Är väldigt övertygande även när den har helt fel")
+      p("Svårt att genomskåda hur nätverket fungerar: *explainability*")
 
   frame("När tar AI över?"):
     p("AI är redan här:")
     itemize:
-      p("Bättre sökresultat och massövervakning.")
-      p("Bättre canceridentifiering.")
+      p("Bättre sökresultat, massövervakning, röstigenkänning, ...")
+      p("Bättre diagnostik i sjukvården (hitta cancer).")
       p("Bättre på att undvika olyckor i trafiken.")
+      p("AI som assistent. Skapa nya bilder från text, skriva kod, ...")
       p("Studenter försöker fuska på tentan med hjälp av ChatGPT.")
-      p("...")
     p("Vad händer när fler områden tas över av AI?")
     itemize:
       p("Omstrukturering av arbetsmarknaden: försvinner mitt jobb?")
       p("Människans viktiga färdighet: att bli en skicklig prompter.")
       p("Hur ska vi förhindra illvillig användning av AI?")
       p("Vem har makten över AI? De stora dataföretagen? Staten?")
-      p("Vad händer med demokratin?")
-      p("Vilket samhälle vill vi leva i?")
+      //https://huggingface.co/models
+      //https://huggingface.co/facebook/bart-large-mnli?candidateLabels=malm%C3%B6%2C+lund%2C+stockholm&multiClass=false&text=Vilken+%C3%A4r+huvudstaden+i+sk%C3%A5ne%3F
+      p("Vad händer med demokratin? Vilket samhälle vil vi ha?")
 
   frame("AI och LTH:"):
     p("Alla anställda och alla blivande ingenjörer behöver lära sig ...")
@@ -84,9 +101,11 @@ def slides = document("När AI tar över"):
       p("att förhindra dålig användning av AI")
     p("Påverkan på lärande och examination:")
     itemize:
-      p("Studenterna har rätt att få djupa kunskaper om hur man:")
+      p("Studenterna har rätt att få djupa kunskaper om:")
       itemize:
-        p("använder AI på ett bra sätt när man pluggar")
-        p("använder AI i den framtida yrkesrollen")
-      p("Examination sker i högre grad muntligen")
-      p("Examination sker i högre grad på förståelsenivå")
+        p("hur man använder AI på ett bra sätt när man pluggar")
+        p("hur man använder AI i den framtida yrkesrollen")
+        p("begränsningar och risker med AI")
+      p("Examination sker i högre grad **muntligen**")
+      p("Examination sker i högre grad **på förståelsenivå**")
+      p("Examinera förmågan att **värdera utdata** från AI")
