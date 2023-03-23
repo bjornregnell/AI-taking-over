@@ -34,12 +34,15 @@ def slides = document("När AI tar över"):
     p("205, 72 : 0      \\hfill Male")
     p("120, 67 : 1      \\hfill Female")
     space(1)
-    p("**Testdata**:")
-    p("167, 73  \\hfill borde bli 0")
-    p("105, 67  \\hfill borde bli 1")
-    p("120, 72  \\hfill borde bli 1")
-    p("143, 67  \\hfill borde bli 0")
-    p("130, 66  \\hfill borde bli 0")
+    p("**Testdata**: \\hfill *korrekt klassificering*")
+    p("167, 73 : 0 \\hfill Male")
+    p("105, 67 : 1 \\hfill Female")
+    p("120, 72 : 1 \\hfill Female")
+    p("143, 67 : 0 \\hfill Male")
+    p("**130, 66** : 0 \\hfill **Male**")
+
+  frame("Träningen ska hitta en binär klassificering"):
+    image("../img/data", width = 1.05)
 
 
   frame("En nervcell i en hjärna"):
