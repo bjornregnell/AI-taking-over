@@ -23,20 +23,24 @@ def slides = document("När AI tar över"):
     space(2)
 
   frame("Hur funkar en AI?"):
-    p("Exempel på ett riktigt simpelt neuralt nätverk:")
+    p("Exempel på ett *riktigt simpelt* neuralt nätverk:")
     itemize:
       p("https://github.com/bjornregnell/scai")
-    p("En fördomsfull binär klassificerare av kön givet längd och vikt.")
-    space(2)
-    p("Träningsdata:")
+    p("En fördomsfull **binär klassificerare** av kön givet längd och vikt.")
+    space(1)
+    p("**Träningsdata**:")
     p("115, 66 : 1      \\hfill Female")
     p("175, 78 : 0      \\hfill Male")
     p("205, 72 : 0      \\hfill Male")
     p("120, 67 : 1      \\hfill Female")
-    space(2)
-    p("Testdata:")
+    space(1)
+    p("**Testdata**:")
     p("167, 73  \\hfill borde bli 0")
+    p("105, 67  \\hfill borde bli 1")
     p("120, 72  \\hfill borde bli 1")
+    p("143, 67  \\hfill borde bli 0")
+    p("130, 66  \\hfill borde bli 0")
+
 
   frame("En nervcell i en hjärna"):
     image("../img/neuron", width = 0.85)
