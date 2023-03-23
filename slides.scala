@@ -70,7 +70,7 @@ def slides = document("När AI tar över"):
     p("Den simpla binära könsklassificeraren:")
     itemize:
       p("6 neuroner, 20 parametrar, tränad på 4 datapunkter")
-    p("ChatGPT-3:")
+    p("ChatGPT:")
     itemize:
       p("175 miljarder parametrar, tränad på **jättemycket** data \\\\(300 miljarder ord tränad med 10,000 specialdatorer)")
       p("Baserad på en **språkmodell** som tar ord som indata och ger troligaste efterföljande ord som utdata.")
@@ -86,6 +86,8 @@ def slides = document("När AI tar över"):
     p("https://openai.com/blog/chatgpt")
 
   frame("Några problem med maskininlärning"):
+    p("Även om den verkar smart så förstår den ingenting!")
+    space(1)
     enumerate:
       p("Bias: fördomsfull AI")
       p("Överträning: kan ej generalisera bortom träningsdata")
@@ -110,10 +112,21 @@ def slides = document("När AI tar över"):
       p("Människans viktiga färdighet: att bli en skicklig prompter.")
       p("Hur ska vi förhindra illvillig användning av AI?")
       p("Vem har makten över AI? De stora dataföretagen? Staten?")
+      p("Vad händer med demokratin? Vilket samhälle vill vi ha?")
+
+  frame("Öppna AI-modeller tillgängliga för alla"):
+    itemize:
+      p("Hemlig AI kan ge konkurrensfördel")
+      p("Öppen AI kan utvecklas snabbare i gemenskap")
+      p("AI-modeller som öppen källkod blir samhällets infrastruktur")
+    space(2)
+    p("https://huggingface.co/models")
+    space(1)
+    p("Sök t.ex. efter modellen bart-large-mnli.")
+    p("Vilken är huvudstaden i Skåne? Malmö, Lund, Stockholm")
       //https://huggingface.co/models
       //https://huggingface.co/facebook/bart-large-mnli?candidateLabels=malm%C3%B6%2C+lund%2C+stockholm&multiClass=false&text=Vilken+%C3%A4r+huvudstaden+i+sk%C3%A5ne%3F
-      p("Vad händer med demokratin? Vilket samhälle vil vi ha?")
-
+    
   frame("AI och universitetsutbildning:"):
     p("Alla anställda och alla studenter behöver lära sig ...")
     itemize:
