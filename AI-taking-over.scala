@@ -5,7 +5,7 @@ import taggy.*
 
 @main def makeSlides = slides.toPdf(out = "AI-taking-over", dir = "tex")
 
-def slides = document("När AI tar över"):
+def slides = document("När AI tar över..."):
   frame("Björn Regnell enligt ChatGPT"):
     p("""
       Björn Regnell är professor i mjukvaruteknik vid Lunds universitet i Sverige.
@@ -92,18 +92,18 @@ def slides = document("När AI tar över"):
     image("../img/chatgpt-steps", width = 1.05)
     p("https://openai.com/blog/chatgpt")
 
-  frame("Några problem med maskininlärning"):
-    p("Även om den verkar smart så förstår den ingenting!")
+  frame("Några problem med dagens maskininlärning"):
+    p("Även om den *verkar* smart så *förstår* den ingenting!")
     space(1)
     enumerate:
-      p("Bias: fördomsfull AI")
-      p("Överträning: kan ej generalisera bortom träningsdata")
-      p("Det är inte lätt att få stora modeller att bli bra")
-      p("Kan plötsligt börja ''hallucinera'' -- spottar ur sig nonsens")
-      p("Svårt att förhindra olämplig eller rent oacceptabel utdata")
-      p("Kan inte själv avgöra vad som är rimligt")
-      p("Är väldigt övertygande även när den har helt fel")
-      p("Svårt att genomskåda hur nätverket fungerar: *explainability*")
+      p("**Bias**: fördomsfull AI.")
+      p("**Överträning**: kan ej generalisera bortom träningsdata.")
+      p("Det är inte lätt att få stora modeller att bli bra.")
+      p("Kan plötsligt börja ''**hallucinera**'' -- spotta ur sig hittepå.")
+      p("Svårt att förhindra olämplig eller rent oacceptabel utdata.")
+      p("Kan inte själv avgöra vad som är rimligt.")
+      p("Är väldigt övertygande även när den har helt fel.")
+      p("Svårt genomskåda hur nätverket fungerar: *explainability*.")
 
   frame("När tar AI över?"):
     p("AI är redan här:")
@@ -116,7 +116,9 @@ def slides = document("När AI tar över"):
     p("Vad händer när fler områden tas över av AI?")
     itemize:
       p("Omstrukturering av arbetsmarknaden: försvinner mitt jobb?")
-      p("Människans viktiga färdighet: att bli en skicklig prompter.")
+      itemize:
+        p("Det är nog inte en **AI** som kommer ta ditt jobb utan **andra människor** som är bättre på att *dra nytta av* AI än du.")
+      p("Människans viktiga färdighet: att bli en **skicklig prompter**.")
       p("Hur ska vi förhindra illvillig användning av AI?")
       p("Vem har makten över AI? De stora dataföretagen? Staten?")
       p("Vad händer med demokratin? Vilket samhälle vill vi ha?")
