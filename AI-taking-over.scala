@@ -140,20 +140,21 @@ def slides = document("När AI tar över..."):
       //https://huggingface.co/models
       //https://huggingface.co/facebook/bart-large-mnli?candidateLabels=malm%C3%B6%2C+lund%2C+stockholm&multiClass=false&text=Vilken+%C3%A4r+huvudstaden+i+sk%C3%A5ne%3F
     
-  frame("AI och universitetsutbildning:"):
-    p("Alla anställda och alla studenter behöver lära sig ...")
+  frame("AI inom högre utbildning:"):
     itemize:
-      p("att programmera")
-      p("att förstå hur en AI funkar")
-      p("att dra nytta av AI")
-      p("att förhindra dålig användning av AI")
-    p("Påverkan på lärande och examination:")
-    itemize:
+      p("Alla anställda och alla studenter behöver lära sig ...")
+      itemize:
+        p("att programmera")
+        p("att förstå hur en AI funkar")
+        p("att dra nytta av AI")
+        p("att förhindra dålig användning av AI")
       p("Studenterna har rätt att få djupa kunskaper om:")
       itemize:
         p("hur man använder AI på ett bra sätt när man pluggar")
         p("hur man använder AI i den framtida yrkesrollen")
         p("begränsningar och risker med AI")
-      p("Examination behöver i högre grad ske **muntligen**")
-      p("Examination behöver ske på **högre kunskapsnivå**")
-      p("Även examinera förmågan att **värdera utdata** från AI")
+      p("Förändrad examination:")
+      itemize: 
+        p("Vi behöver i högre grad examinera **muntligen**")
+        p("Examination behöver ske på **högre kunskapsnivå**")
+        p("Även examinera förmågan att **värdera utdata** från AI")
