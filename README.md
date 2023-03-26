@@ -1,6 +1,6 @@
 # AI-taking-over
 
-* A talk about AI by Björn Regnell in Swedish, explaining how ChatGPT works and discusses what we can expect in the future. 
+* A talk about AI by Björn Regnell, explaining how ChatGPT works and discusses some consequences for higher education. The slides are in Swedish, but some AI translator might help you. 
 
 * You can find the slides in pdf [here](https://github.com/bjornregnell/AI-taking-over/releases)
 
