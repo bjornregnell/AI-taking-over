@@ -7,3 +7,5 @@
 * The code for the simple network in the talk is available here: https://github.com/bjornregnell/scai
 
 * Many thanks for valuable feedback from Marcus Klang and Jacek Malek on an early version of this talk.
+
+* The slides are made with this Scala library for slide generation: https://github.com/bjornregnell/taggy
