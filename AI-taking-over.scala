@@ -51,7 +51,10 @@ def slides = document("När AI tar över..."):
 
   frame("En enkel modell av en hjärncell: en artificiell neuron"):
     image("../img/artificial-neuron", width = 0.85)
-    code("output = S(x1*w1 + x2*w2 + x3*w3 + bias)") 
+    code(" output = S(x1*w1 + x2*w2 + x3*w3 + bias)") 
+    textSize(8,11)
+    space(1)
+    p("\\hfill Warren McCull \\&  Walter Pitts (1943)")
   
   frame("Ett litet nätverk av neuroner"):
     image("../img/ai-network", width = 0.95)
@@ -73,6 +76,7 @@ def slides = document("När AI tar över..."):
 
   // Facebooks språkmodell LaMA:
   // 2048 GPU A100 80Gig VRAM (kostar 150kkr per GPU) i 21 dagar 10^12 ord, 65 10^9 
+  // https://store.nanoporetech.com/eu/nvidia-dgx-station-a100.html
   frame("Vad skiljer vårt simpla nätverk från ChatGPT?"):
     p("Den simpla binära könsklassificeraren:")
     itemize:
