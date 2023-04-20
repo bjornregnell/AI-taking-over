@@ -6,7 +6,12 @@ import taggy.*
 @main def makeSlides = slides.toPdf(out = "AI-taking-over", dir = "tex")
 
 def slides = document("När AI tar över..."):
-  frame("Björn Regnell enligt ChatGPT"):
+  frame("Vinnaren av fototävling..."):
+    image("../img/ai-photo-winner", width = 0.45)
+    p("\\pause ... avsäger sig priset \\hfill \\copyright~Boris Eldagsen")
+    p("https://www.theguardian.com/technology/2023/apr/17/photographer-admits-prize-winning-image-was-ai-generated")
+
+  frame("Björn Regnell enligt ChatGPT:"):
     p("""
       Björn Regnell är professor i mjukvaruteknik vid Lunds universitet i Sverige.
       Han har arbetat på universitetet sedan *1995* och är en känd expert inom kravteknik, 
