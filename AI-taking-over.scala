@@ -6,27 +6,27 @@ import taggy.*
 @main def makeSlides = slides.toPdf(out = "AI-taking-over", dir = "tex")
 
 def slides = document("När AI tar över..."):
-  frame("Vinnaren av fototävling..."):
-    image("../img/ai-photo-winner", width = 0.45)
-    p("\\pause ... avsäger sig priset \\hfill \\copyright~Boris Eldagsen")
-    p("https://www.theguardian.com/technology/2023/apr/17/photographer-admits-prize-winning-image-was-ai-generated")
-
   frame("Björn Regnell enligt ChatGPT:"):
     p("""
-      Björn Regnell är professor i mjukvaruteknik vid Lunds universitet i Sverige.
-      Han har arbetat på universitetet sedan *1995* och är en känd expert inom kravteknik, 
-      *mjukvarutestning* och förbättring av mjukvaruprocesser. Han har publicerat mycket 
-      inom sitt område och har mottagit flera priser för sina forskningsinsatser.""")
+    Björn Regnell är professor i mjukvaruteknik vid Lunds universitet i Sverige.
+    Han har arbetat på universitetet sedan *1995* och är en känd expert inom kravteknik, 
+    *mjukvarutestning* och förbättring av mjukvaruprocesser. Han har publicerat mycket 
+    inom sitt område och har mottagit flera priser för sina forskningsinsatser.""")
     space(4)
     p("Felaktigheter:")
     p("1995 är fel och bara ca 5 av ca 100 artiklar inom testning")
     p("https://cs.lth.se/bjorn-regnell")
-
+    
   frame("Hallå ChatGPT..."):
     image("../img/chatgpt-error", width = 1.05)
     space(2)
     p("Man kan inte få allt...")
     space(2)
+      
+  frame("Vinnaren av fototävling..."):
+    image("../img/ai-photo-winner", width = 0.45)
+    p("\\pause ... avsäger sig priset \\hfill \\copyright~Boris Eldagsen")
+    p("https://www.theguardian.com/technology/2023/apr/17/photographer-admits-prize-winning-image-was-ai-generated")
 
   frame("Hur funkar en AI?"):
     p("Exempel på ett *riktigt simpelt* neuralt nätverk:")
