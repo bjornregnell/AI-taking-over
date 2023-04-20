@@ -191,7 +191,7 @@ def slides = document("När AI tar över..."):
       itemize:
         p("Förståelse för hur AI påverkar mitt ämne")
         p("Dra nytta av AI som pedagogiskt verktyg")
-        p("Vem har tillgång till AI? ChatGPT Pro kostar pengar...")
+        p("Vem har tillgång till AI? \\\\ ChatGPT ''Plus'' kostar pengar...")
       p("Examination: ")
       itemize:
         p("https://universitetslararen.se/2023/03/29/forsta-fuskaren-akte-fast-sa-vad-hander-nu/")
@@ -202,18 +202,18 @@ def slides = document("När AI tar över..."):
         p("Även examinera förmågan att **värdera** utdata från AI")
 
   frame("Frågeställningar för diskussion"):
-    itemize:
-      p("Hur ska vi organisera fortbildning av lärare?")
+    enumerate:
+      p("Hur ska vi organisera **fortbildning** av lärare?")
       enumerate:
         p("Allmänbildning om AI-teknik: funktion och användning")
         p("AI-teknik specifikt för ett visst ämne i en viss disciplin")
-      p("Hur påverkar AI mitt ämne?")
-      itemize:
+      p("Hur påverkar AI mitt specifika **ämne**?")
+      enumerate:
         p("Innehåll?")
         p("Pedagogik?")
         p("Examination?")
-      p("Hur ska våra utbildningsprogram förändras?")
-      p("Vilka risker finns och hur kan de hanteras?")
+      p("Hur ska våra **utbildningsprogram** förändras?")
+      p("Vilka **risker** finns och hur kan de hanteras?")
 
   frame("Länkar"):
     itemize:
@@ -224,4 +224,4 @@ def slides = document("När AI tar över..."):
       p("https://www.ai.lu.se/")
       p("https://www.lu.se/artikel/chatta-med-botten")
       p("https://universitetslararen.se/2023/03/29/forsta-fuskaren-akte-fast-sa-vad-hander-nu/")
-      //p("https://universitetslararen.se/2023/03/29/omstart-for-hogskolan-med-artificiell-intelligens/")
+      p("https://universitetslararen.se/2023/03/29/omstart-for-hogskolan-med-artificiell-intelligens/")
