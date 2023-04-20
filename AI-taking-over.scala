@@ -18,6 +18,7 @@ def slides = document("När AI tar över..."):
       *mjukvarutestning* och förbättring av mjukvaruprocesser. Han har publicerat mycket 
       inom sitt område och har mottagit flera priser för sina forskningsinsatser.""")
     space(4)
+    p("Felaktigheter:")
     p("1995 är fel och bara ca 5 av ca 100 artiklar inom testning")
     p("https://cs.lth.se/bjorn-regnell")
 
@@ -150,19 +151,77 @@ def slides = document("När AI tar över..."):
     
   frame("AI inom högre utbildning:"):
     itemize:
-      p("Alla anställda och alla studenter behöver lära sig ...")
+      p("Anden är ur flaskan!")
+      p("Digitalisering med AI kommer att genomsyra samhället!") 
+      p("Högre utbildning måste utvecklas!")
+      itemize:
+        p("Utbildningsprogram")
+        p("Kursplaner")
+        p("Pedagogik")
+        p("Examination")
+    
+      p("**Alla** anställda och **alla** studenter behöver lära sig ...")
       itemize:
         p("att programmera")
         p("att förstå hur en AI funkar")
         p("att dra nytta av AI")
         p("att förhindra dålig användning av AI")
-      p("Studenterna har rätt att få djupa kunskaper om:")
+
+  frame("Studenterna har rätt att få djupa kunskaper om:"):
+    itemize:
+      p("Hur använda AI på ett bra sätt för att **främja studierna**")
       itemize:
-        p("hur man använder AI på ett bra sätt när man pluggar")
-        p("hur man använder AI i den framtida yrkesrollen")
-        p("begränsningar och risker med AI")
-      p("Förändrad examination:")
-      itemize: 
+        p("AI som en outtröttlig pedagog och coach")
+      p("Hur använda AI i den framtida **yrkesrollen**")
+      itemize:
+        p("Människa+AI för att öka produktivitet och kvalitet")
+      p("Begränsningar och **risker** med AI")
+      itemize:
+        p("Alla medborgares aktiva deltagande i utvecklingen")
+  
+  frame("AI och pedagogik"):
+    itemize:
+      p("Förändrad syn på kunskap och lärarens roll")
+    image("../img/bloom", width = 1.05)
+    p("Wikipedia: ''Blooms taxonomi'' för olika nivåer av kunskap")
+
+  frame("Förändrad pedagogik och examination"):
+    itemize: 
+      p("Pedagogik:")
+      itemize:
+        p("Förståelse för hur AI påverkar mitt ämne")
+        p("Dra nytta av AI som pedagogiskt verktyg")
+        p("Vem har tillgång till AI? ChatGPT Pro kostar pengar...")
+      p("Examination: ")
+      itemize:
+        p("https://universitetslararen.se/2023/03/29/forsta-fuskaren-akte-fast-sa-vad-hander-nu/")
+        p("Vi ska inte examinera AI:ns utan *studentens* kunskaper.")
         p("Vi behöver i högre grad examinera **muntligen**")
         p("Examination behöver ske på **högre kunskapsnivå**")
-        p("Även examinera förmågan att **värdera utdata** från AI")
+        p("Även examinera förmågan att **använda** AI")
+        p("Även examinera förmågan att **värdera** utdata från AI")
+
+  frame("Frågeställningar för diskussion"):
+    itemize:
+      p("Hur ska vi organisera fortbildning av lärare?")
+      enumerate:
+        p("Allmänbildning om AI-teknik: funktion och användning")
+        p("AI-teknik specifikt för ett visst ämne i en viss disciplin")
+      p("Hur påverkar AI mitt ämne?")
+      itemize:
+        p("Innehåll?")
+        p("Pedagogik?")
+        p("Examination?")
+      p("Hur ska våra utbildningsprogram förändras?")
+      p("Vilka risker finns och hur kan de hanteras?")
+
+  frame("Länkar"):
+    itemize:
+      p("https://github.com/bjornregnell/AI-taking-over")
+      p("https://github.com/bjornregnell/scai")
+      p("https://openai.com/blog/chatgpt")
+      p("https://huggingface.co/models")
+      p("https://www.ai.lu.se/")
+      p("https://www.lu.se/artikel/chatta-med-botten")
+      p("https://universitetslararen.se/2023/03/29/forsta-fuskaren-akte-fast-sa-vad-hander-nu/")
+      //p("https://universitetslararen.se/2023/03/29/omstart-for-hogskolan-med-artificiell-intelligens/")
