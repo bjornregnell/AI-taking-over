@@ -97,6 +97,9 @@ def slides = document("När AI tar över..."):
         // Corpus CommonCrawl stod för 60% av indatan till GPT-3, Wikipedia 3% är 3 miljarder ord
         p("**Transformer**: Kan hantera sekvenser av ord, värdera kopplingar mellan ord och avgöra vilka ord som är viktigast.")
 
+  frame("Inga billiga datorer..."):
+    image("../img/berzelius", width = 1.15)
+
   frame("AI-forskare har förfinat träningen i många steg"):
     image("../img/chatgpt-steps", width = 1.05)
     p("https://openai.com/blog/chatgpt")
