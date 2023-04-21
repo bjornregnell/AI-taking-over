@@ -217,6 +217,7 @@ def slides = document("När AI tar över..."):
 
   frame("Länkar"):
     itemize:
+      p("https://youtu.be/BP5GPzV9ICQ")
       p("https://github.com/bjornregnell/AI-taking-over")
       p("https://github.com/bjornregnell/scai")
       p("https://openai.com/blog/chatgpt")
