@@ -3,9 +3,13 @@
 
 import taggy.*
 
-@main def makeSlides = slides.toPdf(out = "AI-taking-over", dir = "tex")
+@main def makeSlides = 
+  allSlides.toPdf(out = "AI-taking-over", dir = "tex")
 
-def slides = document("När AI tar över..."):
+  document("AI och högre utbildning")(higherEducationSlides)
+    .toPdf(out = "AI-higher-education", dir = "tex")
+
+def allSlides = document("När AI tar över..."):
   frame("Björn Regnell enligt ChatGPT:"):
     p("""
     Björn Regnell är professor i mjukvaruteknik vid Lunds universitet i Sverige.
@@ -149,6 +153,21 @@ def slides = document("När AI tar över..."):
       //https://huggingface.co/models
       //https://huggingface.co/facebook/bart-large-mnli?candidateLabels=malm%C3%B6%2C+lund%2C+stockholm&multiClass=false&text=Vilken+%C3%A4r+huvudstaden+i+sk%C3%A5ne%3F
     
+  higherEducationSlides
+
+  frame("Länkar"):
+    itemize:
+      p("https://youtu.be/BP5GPzV9ICQ")
+      p("https://github.com/bjornregnell/AI-taking-over")
+      p("https://github.com/bjornregnell/scai")
+      p("https://openai.com/blog/chatgpt")
+      p("https://huggingface.co/models")
+      p("https://www.ai.lu.se/")
+      p("https://www.lu.se/artikel/chatta-med-botten")
+      p("https://universitetslararen.se/2023/03/29/forsta-fuskaren-akte-fast-sa-vad-hander-nu/")
+      p("https://universitetslararen.se/2023/03/29/omstart-for-hogskolan-med-artificiell-intelligens/")
+
+def higherEducationSlides: TreeContext =
   frame("AI inom högre utbildning:"):
     itemize:
       p("Anden är ur flaskan!")
@@ -214,15 +233,3 @@ def slides = document("När AI tar över..."):
         p("Examination?")
       p("Hur ska våra **utbildningsprogram** förändras?")
       p("Vilka **risker** finns och hur kan de hanteras?")
-
-  frame("Länkar"):
-    itemize:
-      p("https://youtu.be/BP5GPzV9ICQ")
-      p("https://github.com/bjornregnell/AI-taking-over")
-      p("https://github.com/bjornregnell/scai")
-      p("https://openai.com/blog/chatgpt")
-      p("https://huggingface.co/models")
-      p("https://www.ai.lu.se/")
-      p("https://www.lu.se/artikel/chatta-med-botten")
-      p("https://universitetslararen.se/2023/03/29/forsta-fuskaren-akte-fast-sa-vad-hander-nu/")
-      p("https://universitetslararen.se/2023/03/29/omstart-for-hogskolan-med-artificiell-intelligens/")
