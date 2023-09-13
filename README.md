@@ -12,6 +12,4 @@
 
 * A live recording of this talk (in Swedish): https://youtu.be/BP5GPzV9ICQ?si=mDEKFd9jHDMAZOPq
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BP5GPzV9ICQ?si=mDEKFd9jHDMAZOPq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 * The slides are made with this Scala library for slide generation: https://github.com/bjornregnell/taggy
